@@ -1,6 +1,18 @@
-import React from 'react';
+import type React from 'react';
 
-const Timeline = ({ repos }) => {
+interface Repo {
+    id: number;
+    name: string;
+    html_url: string;
+    created_at: string;
+    description: string | null;
+}
+
+interface TimelineProps {
+    repos: Repo[];
+}
+
+const Timeline: React.FC<TimelineProps> = ({ repos }) => {
     return (
         <div style={styles.timeline}>
             {repos.map((repo) => (
@@ -22,7 +34,7 @@ const Timeline = ({ repos }) => {
     );
 };
 
-const styles = {
+const styles: { [key: string]: React.CSSProperties } = {
     timeline: {
         position: 'relative',
         padding: '1rem 0',

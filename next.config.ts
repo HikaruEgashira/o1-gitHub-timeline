@@ -1,10 +1,9 @@
 const isProd = process.env.NODE_ENV === "production";
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,
-	basePath: isProd ? "/o1-github-timeline" : "",
-	assetPrefix: isProd ? "/o1-github-timeline/" : "",
+	basePath: isProd ? "/your-repo-name" : "",
+	assetPrefix: isProd ? "/your-repo-name/" : "",
 	trailingSlash: true,
 	images: {
 		loader: "akamai",
@@ -12,4 +11,4 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+export default nextConfig;

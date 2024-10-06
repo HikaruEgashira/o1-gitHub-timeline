@@ -1,7 +1,12 @@
-import React from 'react';
+import type React from 'react';
 
-const Summary = ({ summary }) => {
+interface SummaryProps {
+    summary: { [year: string]: number };
+}
+
+const Summary: React.FC<SummaryProps> = ({ summary }) => {
     const sortedYears = Object.keys(summary).sort();
+
     return (
         <div style={styles.summary}>
             <h2>Repository Summary by Year</h2>
@@ -16,7 +21,7 @@ const Summary = ({ summary }) => {
     );
 };
 
-const styles = {
+const styles: { [key: string]: React.CSSProperties } = {
     summary: {
         margin: '2rem 0',
         padding: '1rem',
