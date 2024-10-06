@@ -53,3 +53,11 @@ GitHub Timeline is a web application that visualizes a GitHub user's public repo
 ## License
 
 This project is licensed under the MIT License.
+
+## Acknowledgements
+
+Powerd by o1-mini
+
+prompt based on app-ideas:
+
+https://github.com/florinpop17/app-ideas/blob/master/Projects/3-Advanced/GitHub-Timeline-App.md
