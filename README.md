@@ -1,3 +1,5 @@
+# README.md
+
 # GitHub Timeline
 
 GitHub Timeline is a web application that visualizes a GitHub user's public repositories in a timeline format, displaying repository names, creation dates, and descriptions. It also provides a summary of the number of repositories created each year.
@@ -15,6 +17,10 @@ GitHub Timeline is a web application that visualizes a GitHub user's public repo
 - Next.js
 - React
 - Axios
+
+## Deployment
+
+The application is automatically deployed to GitHub Pages using GitHub Actions upon each push to the `main` branch.
 
 ## Getting Started
 
@@ -49,6 +55,16 @@ GitHub Timeline is a web application that visualizes a GitHub user's public repo
    ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## Configuration for GitHub Pages
+
+1. **Set the `basePath` in `next.config.js`:**
+
+   Replace `/your-repo-name` with the name of your GitHub repository.
+
+2. **Update the `homepage` in `package.json`:**
+
+   Although not mandatory for Next.js, it's good practice to set the `homepage` field if you plan to use other deployment methods.
 
 ## License
 
